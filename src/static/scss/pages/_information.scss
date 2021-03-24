@@ -1,0 +1,25 @@
+.information_page {
+  padding: 50px 0;
+  .title {
+    margin-bottom: 50px;
+  }
+  h2 {
+    color: $darkGray;
+    font-size: 60px;
+    font-family: "IBMPlex-Bold";
+  }
+  .progress-bar {
+    background-color: $darkBlue !important;
+    background-image: linear-gradient(to right, $startGradient, $endGradient);
+  }
+  .q_body {
+    margin-bottom: 15px;
+    .q {
+      font-family: "sora-regular";
+      font-size: 18px;
+    }
+  }
+  .btn_wrapper {
+    margin-top: 20px;
+  }
+}
