@@ -1,0 +1,60 @@
+.home_page {
+  height: 100vh;
+  background-image: url("/static/images/home.png");
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+  .logo {
+    font-family: "IBMPlex-Bold";
+    color: $white;
+    font-size: 62px;
+    margin-bottom: 30px;
+  }
+  .left {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    padding: 50px 80px 50px 50px;
+    height: 100vh;
+    q {
+      font-family: "sora-light";
+      font-size: 14px;
+      color: $white;
+      line-height: 2;
+      margin-bottom: 25px;
+    }
+    h3 {
+      font-size: 18px;
+      font-family: "sora-semiBoldt";
+      color: $white;
+      margin: 0 0 5px 0;
+    }
+    .home_img {
+      height: 320px;
+      margin-bottom: 30px;
+      position: relative;
+      .shape_img,
+      .man_img,
+      .top_img {
+        height: 100%;
+        position: absolute;
+        width: fit-content;
+      }
+      .shape_img {
+        z-index: 1;
+      }
+      .top_img {
+        z-index: 3;
+        top: -69px;
+        left: 82px;
+        display: none;
+      }
+      .man_img {
+        z-index: 2;
+      }
+    }
+  }
+  .main_btn {
+    float: right;
+  }
+}

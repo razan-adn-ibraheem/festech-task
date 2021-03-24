@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/*====================================
+|||||||||||| Add fonts||||||||||||||||
+=====================================*/
+@font-face {
+  font-family: "sora-regular";
+  src: url("/static/fonts/Sora-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sora-light";
+  src: url("/static/fonts/Sora-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "sora-semiBoldt";
+  src: url("/static/fonts/Sora-SemiBold.ttf") format("truetype");
+}
+@font-face {
+  font-family: "IBMPlex-Bold";
+  src: url("/static/fonts/IBMPlexSans-Bold.ttf") format("truetype");
+}

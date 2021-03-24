@@ -1,0 +1,12 @@
+.main_btn {
+  flex: 1 1 auto;
+  margin: 10px;
+  padding: 15px 65px;
+  font-family: "sora-light";
+  font-size: 20px;
+  color: #fff;
+  border-radius: 30px;
+  border: none;
+  background-image: linear-gradient(to right, $startGradient, $endGradient);
+  transition: all 0.5s linear;
+}
