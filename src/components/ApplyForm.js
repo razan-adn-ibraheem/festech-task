@@ -2,8 +2,10 @@ import React from 'react';
 import { Formik, Form, validateYupSchema, Field } from 'formik';
 import * as Yup from 'yup';
 import FormikControl from './FormikControls/FormikControls';
-import Nationality from '../Api/Nationality.json';
+import Nationality from '../Api/q1.json';
 import { Redirect, useHistory } from "react-router-dom";
+import 'antd/dist/antd.css';
+import { Radio } from 'antd';
 
 
 function ApplyForm() {
@@ -11,19 +13,19 @@ function ApplyForm() {
 
     const option = [
         {
-            "num_code": "",
-            "alpha_2_code": "AF",
-            "alpha_3_code": "AFG",
-            "en_short_name": "Afghanistan",
-            "nationality": "Nationality"
+            num_code: "",
+            alpha_2_code: "AF",
+            alpha_3_code: "AFG",
+            en_short_name: "Afghanistan",
+            nationality: "Nationality"
 
         },
         {
-            "num_code": "4",
-            "alpha_2_code": "AF",
-            "alpha_3_code": "AFG",
-            "en_short_name": "Afghanistan",
-            "nationality": "Afghan"
+            num_code: "4",
+            alpha_2_code: "AF",
+            alpha_3_code: "AFG",
+            en_short_name: "Afghanistan",
+            nationality: "Afghan"
         }];
 
     const initialValues = {
@@ -63,7 +65,8 @@ function ApplyForm() {
     }
 
     return (
-        <Formik
+  <div>
+            <Formik
             initialValues={initialValues}
             validationSchema={validationSchema}
             onSubmit={onSubmit}>
@@ -117,6 +120,7 @@ function ApplyForm() {
             }
 
         </Formik>
+  </div>
     )
 }
 

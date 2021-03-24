@@ -1,8 +1,5 @@
 import React, {Component} from 'react';
-import man from '../static/images/man.png'
-import top from '../static/images/top.png';
-import whithshape from '../static/images/Path 968.png';
-import ApplyForm from '../components/ApplyForm';
+import MultySteps from '../components/MultySteps';
 
 class Informations extends Component {
     constructor(props) {
@@ -12,8 +9,10 @@ class Informations extends Component {
 
     render() {
         return (
-            <div className="home_page">
-               data
+            <div className="information_page">
+                <div className="container"> 
+               <MultySteps />
+            </div>
             </div>
         );
     }
